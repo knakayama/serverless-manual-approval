@@ -57,7 +57,7 @@ class Worker {
       })
       .then((data) => {
         console.log(data);
-        this.callback(data);
+        this.callback(null, data);
       })
       .catch((err) => {
         console.log(err);
